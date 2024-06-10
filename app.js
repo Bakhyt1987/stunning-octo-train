@@ -10,7 +10,6 @@ function Remove(task) {
         return
     }
     tasks.splice(index, 1)
-
 }
 
 function Prioritize(task) {
@@ -22,12 +21,10 @@ function Prioritize(task) {
     tasks.splice(index, 1)
     tasks.unshift(oldTask)
 }
-
 Add('task 2')
 Add('task 3')
-//console.log(tasks)
-Remove('sdasd 2')
 console.log(tasks)
-
-Prioritize('task 3asdas')
+Remove('task 4')
+console.log(tasks)
+Prioritize('task 4')
 console.log(tasks)
